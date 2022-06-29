@@ -1,9 +1,23 @@
-.section{
-    font-weight: 300px;
-    font-style: color#9c9ab6;
+* {
+    margin: 0px;
+    background-color: rgb(12, 203, 236);
 }
 
 #demo {
-    font-family: Poppins;
-    font-weight: 400px;
+    display: flex;
+    padding-top: 100px;
+    padding-left: 40px;
+    color: rgb(247, 7, 7);
+    font-size: 100px;
+}
+
+.section2 {
+    display: flex;
+    padding-left: 41px;
+}
+img {
+    display: flex;
+    width:300px;
+    height:310px;
+    background: no-repeat;                           
 }
