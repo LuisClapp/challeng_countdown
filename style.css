@@ -1,23 +1,36 @@
-* {
-    margin: 0px;
-    background-color: rgb(12, 203, 236);
+.grid-container {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "1 2"
+    "3 4"
+    "5 6";
+    grid-template-rows: 20px 1fr 20px;
+    grid-template-columns: 1fr 40px;
+    border: 2px solid red;
+}
+#demo {
+    grid-area: 3;
+    font-size: 20px;
+    border: 2px solid red;    
 }
 
-#demo {
-    display: flex;
-    padding-top: 100px;
-    padding-left: 40px;
-    color: rgb(247, 7, 7);
-    font-size: 100px;
+.section1{
+    grid-area: 1;
+    border: 2px solid red;
+    width: 80px;
 }
 
 .section2 {
-    display: flex;
-    padding-left: 41px;
+    grid-area: footer;
+    border: 2px solid red;
 }
+
 img {
-    display: flex;
-    width:300px;
-    height:310px;
-    background: no-repeat;                           
+    grid-area: img;
+    height: 220px;
+    width: 250px;
+    border: 2px solid red;
 }
+
