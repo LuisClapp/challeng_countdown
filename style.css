@@ -1,36 +1,46 @@
-.grid-container {
+body {
     margin: 0;
     height: 100vh;
     display: grid;
     grid-template-areas: 
-    "1 2"
-    "3 4"
-    "5 6";
-    grid-template-rows: 20px 1fr 20px;
-    grid-template-columns: 1fr 40px;
-    border: 2px solid red;
-}
-#demo {
-    grid-area: 3;
-    font-size: 20px;
-    border: 2px solid red;    
+    "header header"
+    "main aside"
+    "footer footer";
+    grid-template-rows: 40px 1fr 40px;
+    grid-template-columns: 1fr 80px;
 }
 
-.section1{
-    grid-area: 1;
-    border: 2px solid red;
-    width: 80px;
+header {
+    grid-area: header;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+ 
+main {
+    grid-area: main;
+    background-color: red;
+    display: flex;
+    font-size: 75px;
 }
 
-.section2 {
-    grid-area: footer;
-    border: 2px solid red;
+.demo-soon {
+    display:flex;
+    
 }
 
-img {
-    grid-area: img;
-    height: 220px;
-    width: 250px;
-    border: 2px solid red;
+aside {
+    grid-area: aside;
+    width: 100px;
+    height: 150px;
+    margin: 0;
+    
 }
+/* #Grid
 
+* Posicionamento dos elementos dentro da caixa
+* Posicionamento horizontal ou vertical ao mesmo tempo
+* Pode ser flexível ou fixo
+* Cria espaços para os elementos filhos habitarem
